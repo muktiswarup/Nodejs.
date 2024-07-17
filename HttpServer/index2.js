@@ -19,17 +19,41 @@ const server = http.createServer((req, res) => {
   // Send the response first
   switch (myUrl.pathname) {
     case '/':
-      res.end('You are in home page');
+      if (req.method === 'GET') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('You are on the home page');
+      } else {
+        res.writeHead(405, { 'Content-Type': 'text/plain' });
+        res.end('Method Not Allowed');
+      }
       break;
+
     case '/about':
       const userName = myUrl.query.myname || 'Guest';
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end(`Hi ${userName}, you are on the about page`);
       break;
 
     case '/search':
-        const search=myUrl.query.search_query;
-        res.end("Here are your result for " + search);
-        break;
+      const search = myUrl.query.search_query;
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.end(`Here are your results for ${search}`);
+      break;
+
+    case '/signup':
+      if (req.method === 'GET') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('This is a signup form');
+      } else if (req.method === 'POST') {
+        // Simulate a DB query or other processing
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('Signup Success');
+      } else {
+        res.writeHead(405, { 'Content-Type': 'text/plain' });
+        res.end('Method Not Allowed');
+      }
+      break;
+
     default:
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('404: Error');

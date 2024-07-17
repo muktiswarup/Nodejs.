@@ -1,30 +1,8 @@
-1720767625663:New request received 
-1720767625740:New request received 
-1720767890578 / :New request received 
-1720767890676 /favicon.ico :New request received 
-1720767963649 / :New request received 
-1720767963724 /favicon.ico :New request received 
-1720768010047 / :New request received 
-1720768010122 /favicon.ico :New request received 
-1720768145979 /about :New request received 
-1720768147122 /favicon.ico :New request received 
-1720768175140 /about/lk :New request received 
-1720768175212 /favicon.ico :New request received 
-1720768177184 /about/lk :New request received 
-1720768177257 /favicon.ico :New request received 
-1720768448717 /about/lk :New request received 
-1720768448804 /favicon.ico :New request received 
-1720768452230 /about :New request received 
-1720768453083 /favicon.ico :New request received 
-1720768463818 / :New request received 
-1720768463904 /favicon.ico :New request received 
-1720768672361 / :New request received 
-1720768672439 /favicon.ico :New request received 
-1720768713589 / :New request received 
-1720768713669 /favicon.ico :New request received 
-1720768865195 / :New request received 
-1720768865272 /favicon.ico :New request received 
-1720768865538 / :New request received 
-1720768865617 /favicon.ico :New request received 
-1720768865768 / :New request received 
-1720768865854 /favicon.ico :New request received 
+1720885103914 GET /search?search_query=javascript+tic : New request received
+1720885126393 GET /search?search_query=javascript+tic : New request received
+1720885134159 GET /search?search_query=javascript+tic+toe : New request received
+1720885291519 GET /search?search_query=javascript+tic+toe : New request received
+1720885870960 GET /signup : New request received
+1721047511217 GET /about?myname=%27chandra%27&id=2&search=dog : New request received
+1721047525233 GET /about : New request received
+1721047533664 GET / : New request received
